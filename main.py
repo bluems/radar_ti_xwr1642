@@ -1,8 +1,10 @@
-import TI.XWR1642
+from TI.XWR1642 import XWR1642
 
 
 def main():
-    radar = TI.XWR1642()
+    radar = XWR1642('1642config.cfg')
+    # radar.input_config('1642config.cfg')
+    radar.print_config()
     pass
 
 
